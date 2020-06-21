@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+</head>
+<body>
+<h1>EMOJIFIER</h1>
+<form action="" method="POST">
+	{% csrf_token %}
+	<textarea name="content" cols="30" rows="10">Predict</textarea>
+	<button type="submit">
+
+	</button>
+</form>
+<p>
+	{{ content }}{{ emoji }}
+</p>
+</body>
+</html>
